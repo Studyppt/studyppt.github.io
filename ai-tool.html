@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Tools - StudyPPT</title>
+    <link rel="stylesheet" href="maa.css">
+</head>
+<body>
+
+    <!-- 🔹 Navigation Bar -->
+    <nav>
+        <ul>
+            <li><a href="index.html">🏠 होम</a></li>
+            <li><a href="ai-tools.html">🤖 AI टूल्स</a></li>
+            <li><a href="contact.html">📩 संपर्क करें</a></li>
+        </ul>
+    </nav>
+
+    <header>
+        <h1>🚀 AI Tools - StudyPPT</h1>
+        <p>नीचे दिए गए AI टूल्स का उपयोग करके अपने कार्य को आसान बनाएं!</p>
+    </header>
+
+    <!-- 🔹 AI Tools Section -->
+    <section class="ai-tools">
+        <div class="tool">
+            <h2>📄 टेक्स्ट समरी जनरेटर</h2>
+            <textarea id="summaryInput" placeholder="अपना टेक्स्ट यहां डालें..."></textarea>
+            <button onclick="generateSummary()">🎯 संक्षेप करें</button>
+            <p id="summaryOutput"></p>
+        </div>
+
+        <div class="tool">
+            <h2>🎨 इमेज टू टेक्स्ट (OCR)</h2>
+            <input type="file" id="imageInput" accept="image/*">
+            <button onclick="extractText()">📜 टेक्स्ट निकालें</button>
+            <p id="imageTextOutput"></p>
+        </div>
+
+        <div class="tool">
+            <h2>🔎 ChatGPT आधारित Chatbot</h2>
+            <input type="text" id="chatInput" placeholder="यहां अपना सवाल टाइप करें...">
+            <button onclick="askChatGPT()">💬 पूछें</button>
+            <p id="chatResponse"></p>
+        </div>
+    </section>
+
+    <!-- 🔹 JavaScript जोड़ना -->
+    <script src="ai-tool.js"></script>
+
+</body>
+</html>
+<!-- AI Chatbot का UI -->
+<div id="chatContainer">
+    <div id="chatBox"></div>
+    <input type="text" id="userInput" placeholder="Type your question...">
+    <button onclick="showResponse()">Ask AI</button>
+</div>

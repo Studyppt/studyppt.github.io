@@ -1,0 +1,178 @@
+/* यह पूरे पेज के लिए Default Styling सेट करता है */
+body {
+    font-family: Arial, sans-serif; /* Font सेट करता है */
+    margin: 0;  /* बाहर की खाली जगह हटाता है */
+    padding: 0; /* अंदर की खाली जगह हटाता है */
+    background-color: #f4f4f4; /* बैकग्राउंड का रंग */
+    color: #333; /* टेक्स्ट का रंग */
+}
+/* अगर Background Color बदलना हो, तो "background-color: #f4f4f4;" बदलें */
+
+/* Header Section का Styling */
+header {
+    background-color: #333; /* बैकग्राउंड रंग */
+    color: white; /* टेक्स्ट रंग */
+    padding: 10px 0; /* अंदर की खाली जगह */
+    text-align: center; /* टेक्स्ट को बीच में लाना */
+}
+/* Header का रंग बदलना हो, तो "background-color: #333;" बदलें */
+
+/* Navigation Bar Styling */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #333;
+    padding: 10px 20px;
+}
+/* Navigation Bar का रंग बदलने के लिए "background: #333;" को बदलें */
+
+/* Hero Section (Welcome Section) */
+.hero {
+    text-align: center;
+    padding: 50px;
+    background: lightblue; /* बैकग्राउंड रंग */
+}
+/* Hero Section का बैकग्राउंड बदलने के लिए "background: lightblue;" बदलें */
+
+/* AI Tools List */
+.tools-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+/* अगर आप Tools को एक Column में दिखाना चाहते हैं, तो "display: flex;" को "display: block;" कर दें */
+
+/* AI Tool Box */
+.tool-item {
+    width: 45%; /* Box की चौड़ाई */
+    margin: 10px;
+    padding: 15px;
+    background-color: #f0f0f0;
+    border-radius: 8px;
+}
+/* Tool Box की चौड़ाई बढ़ाने के लिए "width: 45%;" को "width: 50%;" या "width: 100%;" करें */
+
+/* Footer Section */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+}
+/* Footer का बैकग्राउंड बदलने के लिए "background-color: #333;" बदलें */
+
+/* Responsive Design (Mobile Screens) */
+@media screen and (max-width: 768px) {
+    /* Small Screen के लिए Navigation Bar */
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background: #222;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        text-align: center;
+    }
+
+    /* जब Active होगा तो दिखेगा */
+    .nav-links.active {
+        display: flex;
+    }
+
+    /* Mobile Menu Button (≡) को Show करना */
+    .menu-toggle {
+        display: block;
+    }
+
+    /* AI Tools को Full Width करना */
+    .tool-item {
+        width: 100%;
+    }
+}
+/* अगर Mobile View में Tools की Width को छोटा करना है, तो ".tool-item { width: 100%; }" को बदलें */
+
+
+
+/*xxxxxxxxxxxxxxxxxxxxx.........*/
+
+
+
+
+
+
+/* 🔹 AI Tools Page Design */
+.ai-tools {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.tool {
+    width: 80%;
+    max-width: 600px;
+    background: #f4f4f4;
+    padding: 20px;
+    margin: 10px 0;
+    border-radius: 8px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+textarea, input {
+    width: 90%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px 15px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+
+/* 🔥 AI Chatbot के लिए Styling */
+#chatContainer {
+    width: 400px;
+    margin: auto;
+    padding: 20px;
+    border: 2px solid #333;
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+}
+
+#chatBox {
+    height: 300px;
+    overflow-y: auto;
+    margin-bottom: 10px;
+}
+
+.user-message {
+    text-align: right;
+    color: cyan;
+    margin: 5px;
+}
+
+.ai-message {
+    text-align: left;
+    color: yellow;
+    margin: 5px;
+}
+
+input, button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+}

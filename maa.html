@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>  
+    <!-- यह पेज की Encoding सेट करता है ताकि सभी भाषाओं के अक्षर सही दिखें -->
+    <meta charset="UTF-8"> 
+    <!-- इसे न बदलें क्योंकि UTF-8 सबसे अच्छा Encoding है -->
+
+    <!-- यह पेज को Responsive बनाता है ताकि यह मोबाइल और PC दोनों में सही दिखे -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <!-- इसे न बदलें वरना वेबसाइट मोबाइल पर सही नहीं दिखेगी -->
+
+
+    <!-- यह पेज का Title सेट करता है जो Browser Tab में दिखता है -->
+    <title>AI Tools Website</title>
+    <!-- इसे बदलकर अपनी वेबसाइट का नाम रख सकते हैं -->
+
+    <!-- यह CSS फ़ाइल को HTML से जोड़ता है ताकि स्टाइल्स लागू हो सकें -->
+    <link rel="stylesheet" href="maa.css">  
+    <!-- अगर आपकी CSS फाइल का नाम कुछ और है, तो इसे "main.css" या अपनी फाइल का नाम रखें -->
+</head>
+<body>
+
+
+
+    <!-- Header Section: यह नेविगेशन मेनू को दिखाता है -->
+    <header> 
+        <nav class="navbar">
+            <!-- यह Logo दिखाने के लिए है -->
+            <div class="logo">My AI Tools</div>
+            <!-- अगर आपको वेबसाइट का नाम बदलना है, तो यहां "My AI Tools" की जगह कुछ और लिखें -->
+
+            <!-- Navigation Links -->
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">AI Tools</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            <!-- अगर नया Menu Item जोड़ना है, तो इसी लिस्ट में <li><a href="#">New Item</a></li> जोड़ें -->
+
+            <!-- Mobile Menu Toggle Button (यह छोटे स्क्रीन पर Menu खोलने के लिए है) -->
+            <div class="menu-toggle">&#9776;</div>
+            <!-- अगर आप Mobile Menu Button हटाना चाहते हैं, तो इस <div> को हटा दें -->
+        </nav>  
+    </header>
+
+    <!-- Hero Section: यह मुख्य Welcome Section है -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Welcome to My AI Tools</h1>
+            <p>Explore powerful AI tools for learning, research, and productivity.</p>
+            
+            <!-- यह बटन AI Tools Section पर ले जाएगा -->
+            <a href="#tools" class="btn">Get Started</a>
+            <!-- अगर आप बटन का टेक्स्ट बदलना चाहते हैं, तो "Get Started" की जगह कुछ और लिखें -->
+        </div>
+    </section>
+
+    <!-- AI Tools Section: यह AI टूल्स की जानकारी दिखाने के लिए है -->
+    <section id="tools">
+        <h2>Our AI Tools</h2>
+        <div class="tools-list">
+            
+            <!-- AI Tool 1 (इसमें आप अपने टूल की जानकारी डाल सकते हैं) -->
+            <div class="tool-item">
+                <h3>Tool 1</h3>
+                <p>Description of AI Tool 1.</p>
+                <!-- "Tool 1" और "Description of AI Tool 1." को अपने टूल का नाम और विवरण देने के लिए बदलें -->
+            </div>
+            
+            <!-- AI Tool 2 -->
+            <div class="tool-item">
+                <h3>Tool 2</h3>
+                <p>Description of AI Tool 2.</p>
+                <!-- "Tool 2" और "Description of AI Tool 2." को बदलें -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section: यह वेबसाइट के नीचे दिखाई देगा -->
+    <footer>
+        <p>&copy; 2025 AI Tools</p>
+        <!-- "2025 AI Tools" को बदलकर अपनी कंपनी या ब्रांड का नाम डाल सकते हैं -->
+    </footer>
+
+    <!-- JavaScript for Mobile Navigation -->
+    <script>
+        /* यह Mobile Menu (≡) को Click करने पर Navigation Links दिखाएगा या छुपाएगा */
+        document.querySelector(".menu-toggle").addEventListener("click", function() {
+            document.querySelector(".nav-links").classList.toggle("active");
+        });
+        /* अगर Mobile Menu Functionality हटानी है, तो इस पूरे <script> सेक्शन को हटा दें */
+    </script>
+    
+    
+    
+    
+
+</body>
+</html>
+
+
